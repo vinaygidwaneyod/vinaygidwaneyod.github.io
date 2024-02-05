@@ -34,12 +34,14 @@
         $("#video").hide();
         $("#demo").hide();
         $("#menu").show();
+        $('#goback').show();
     })
 
 
     var idleTime = 0;
     $(document).ready(function () {
       $('#demo').hide();
+      $('#goback').hide();
       var idleInterval = setInterval(timerIncrement, 10000); 
 
       $(this).mousemove(function (e) {
@@ -76,6 +78,7 @@
       	$("#demo").hide();
       	$("#video").attr("src", "https://static.centrobenefitsgroup.com/2024-townhall/apis.gif" + "?a="+Math.random());
         $('#video').show();
+        $('#goback').hide();
       }
     }
 </script>
