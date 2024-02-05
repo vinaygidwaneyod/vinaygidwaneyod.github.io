@@ -4,8 +4,8 @@
 <title>AI @ OD</title>
 <body background="background.png">
   <video id="video" autoplay controls style="width: 100%; height: 100%">
-  <source src="https://static.centrobenefitsgroup.com/2024-townhall/ai.mp4" type="video/mp4">
- </video>
+    <source src="https://static.centrobenefitsgroup.com/2024-townhall/ai2.gif" type="video/mp4">
+  </video>
   <!-- <img id="video" src="AI.mp4" width="100%" height="100%"> -->
   <div id="menu" style="background-image: url('background.png'); width: 100%; height: 100%; position: relative; top: 0px; left: 0px; text-align: center; display: none">
     <br/><br/><br/><br/>
@@ -31,11 +31,11 @@
 
 <script language="Javascript">
 
-  $('#video').click(function (e) { 
-        $("#video").hide();
-        $("#demo").hide();
-        $("#menu").show();
-        $('#goback').show();
+    $('#video').click(function (e) { 
+      $("#video").hide();
+      $("#demo").hide();
+      $("#menu").show();
+      $('#goback').show();
     })
 
 
@@ -78,7 +78,7 @@
       idleTime = idleTime + 1;
       if (idleTime > 1) { 
         $("#demo").hide();
-        $("#video").attr("src", "https://static.centrobenefitsgroup.com/2024-townhall/ai.mp4" + "?a="+Math.random());
+        $("#video").attr("src", "https://static.centrobenefitsgroup.com/2024-townhall/ai2.gif" + "?a="+Math.random());
         $('#video').show();
         $('#goback').hide();
       }
